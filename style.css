@@ -11,3 +11,29 @@ body {
     background-position: top center;
     background-repeat: no-repeat;
   }
+
+  .visually-hidden {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+  }
+  
+  .container {
+    width: 1730px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .main-header {
+    padding: 90px 0;
+  }
+  
+  .main-header-nav {
+    display: flex;
+    align-items: center;
+  }
