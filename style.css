@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    min-width: 1750px;
+    font-family: "Forum", "Arial", sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #ffffff;
+    background-color: #3b181b;
+    background-image: url("img/bg.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
