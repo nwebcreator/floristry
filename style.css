@@ -32,8 +32,48 @@ body {
   .main-header {
     padding: 90px 0;
   }
-  
+
   .main-header-nav {
     display: flex;
     align-items: center;
   }
+  
+  .site-navigation {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-left: 290px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  max-width: 950px;
+}
+
+.site-navigation-item {
+  margin-right: 60px;
+}
+
+.site-navigation-item:last-child {
+  margin-right: 0;
+}
+
+.site-navigation-link {
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: normal;
+  letter-spacing: 0.06em;
+  color: inherit;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.phone {
+  margin-left: auto;
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: normal;
+  letter-spacing: 0.06em;
+  color: inherit;
+  text-transform: uppercase;
+  text-decoration: none;
+}
