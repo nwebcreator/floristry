@@ -29,6 +29,23 @@ body {
     padding-right: 10px;
   }
 
+  .button {
+  display: inline-block;
+  padding: 18px 30px;
+  color: inherit;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 13px;
+  text-align: center;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* NAVIGATION */
+
   .main-header {
     padding: 90px 0;
   }
@@ -76,4 +93,70 @@ body {
   color: inherit;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+/* PROMO */
+
+.title {
+  width: 820px;
+  margin: 95px auto 80px auto;
+  font-weight: normal;
+  font-size: 120px;
+  line-height: 132px;
+  text-align: center;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.promo {
+  display: flex;
+  flex-direction: column;
+}
+
+.promo-button {
+  margin-bottom: 30px;
+  align-self: center;
+}
+
+.promo-navigation-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.social-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.social-item {
+  padding: 30px 0 10px 0;
+}
+
+.social-item-link {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  color: inherit;
+}
+
+.promo-link {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: 0.06em;
+  color: inherit;
+  text-decoration: none;
+  text-transform: lowercase;
+  transform-origin: 0 0;
+  transform: translateX(100%) rotate(90deg);
+}
+
+.catalog {
+  padding-top: 170px;
+  padding-bottom: 250px;
+  background-color: #3b181b;
 }
