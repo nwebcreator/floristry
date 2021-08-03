@@ -173,6 +173,13 @@ body {
   text-align: center;
 }
 
+.section-title-big {
+  font-size: 50px;
+  line-height: 55px;
+  letter-spacing: 0.09em;
+  text-align: left;
+}
+
 .catalog-title-shadow {
   margin: 0;
   font-weight: normal;
@@ -255,3 +262,27 @@ body {
   padding: 0;
   border: none;
 }
+
+/* SALES */
+
+.sales {
+  display: flex;
+  width: 1176px;
+  margin: 0 auto;
+  padding-bottom: 250px;
+}
+
+.sales-text-column {
+  padding: 40px 4px 20px;
+}
+
+.sales-img-column {
+  width: 697px;
+}
+
+.sales-text {
+  padding: 57px 50px 40px 0;
+  margin: 0;
+  line-height: 31px;
+}
+
