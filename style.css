@@ -394,3 +394,30 @@ body {
 .certificates-item-big .certificate-text {
   padding: 95px 60px 130px 74px;
 }
+
+/*PARTNERS*/
+
+.partners {
+  padding-bottom: 195px;
+}
+
+.partners-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  width: 1215px;
+  margin: 0 auto;
+  padding: 90px 0 0 45px;
+}
+
+.partners-item {
+  flex-grow: 1;
+  margin-right: 33px;
+  margin-bottom: 35px;
+}
+
+.partners-item-img {
+  width: 100%;
+  object-fit: cover;
+  vertical-align: middle;
+}
