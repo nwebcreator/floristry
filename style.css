@@ -44,6 +44,14 @@ body {
   text-decoration: none;
 }
 
+.button:hover,
+.button:focus {
+  color: #3b181b;
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+}
+
+
 /* NAVIGATION */
 
   .main-header {
@@ -95,6 +103,15 @@ body {
   text-decoration: none;
 }
 
+.site-navigation-link:hover,
+.site-navigation-link:focus {
+  text-decoration: underline;
+}
+
+.site-navigation-link:active {
+  opacity: 0.5;
+}
+
 /* PROMO */
 
 .title {
@@ -114,7 +131,7 @@ body {
 }
 
 .promo-button {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   align-self: center;
 }
 
@@ -125,22 +142,68 @@ body {
 }
 
 .social-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 0;
   margin: 0;
+  margin-left: 10px;
+  margin-bottom: 70px;
   list-style: none;
 }
 
 .social-item {
-  padding: 30px 0 10px 0;
+  padding: 10px 0 10px 0;
 }
 
 .social-item-link {
+  display: flex;
   font-weight: normal;
   font-size: 20px;
   line-height: 22px;
   letter-spacing: 0.06em;
   text-decoration: none;
   color: inherit;
+}
+
+.social-item:hover,
+.social-item:focus {
+  opacity: 0.5;
+}
+
+.social-item-link::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+}
+
+.social-link-instagram::before {
+  background-image: url("img/instagram.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.social-link-facebook::before {
+  background-image: url("img/facebook.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.social-link-whatsapp::before {
+  background-image: url("img/whatsapp.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.social-link-vk::before {
+  background-image: url("img/vk.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .promo-link {
@@ -157,11 +220,28 @@ body {
 
 /* CATALOG */
 
+.catalog-wrapper::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 60px;
+  background-image: url("img/gradient.svg");
+  background-repeat: repeat;
+  background-size: contain;
+  margin-top: -60px;
+}
+
+.catalog-wrapper {
+  position: relative;
+  width: 100%;
+}
+
 .catalog {
   padding-top: 170px;
   padding-bottom: 250px;
   background-color: #3b181b;
 }
+
 
 .section-title {
   margin: 0;
@@ -285,6 +365,10 @@ body {
   margin: 0;
   line-height: 31px;
 }
+.sales-img {
+  padding: 10px 10px 10px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
 
 /* PORTFOLIO */
 
@@ -343,6 +427,7 @@ body {
   margin-left: 15px;
   margin-right: 15px;
   background-color: #281014;
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.4);
 }
 
 .certificates-item-big {
@@ -352,11 +437,20 @@ body {
 
 .certificate-top {
   display: flex;
+  position: relative;
   flex-direction: column;
   align-items: center;
   align-self: stretch;
   padding: 10px 5px;
   background-color: #0a0a0e;
+}
+
+.certificates-item-left {
+  background-color: #262835;
+}
+
+.certificates-item-right {
+  background-color: #101116;
 }
 
 .certificate-logo {
@@ -395,6 +489,22 @@ body {
   padding: 95px 60px 130px 74px;
 }
 
+.certificate-decoration-top {
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  width: auto;
+  height: auto;
+}
+
+.certificate-decoration-bottom {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  width: auto;
+  height: auto;
+}
+
 /*PARTNERS*/
 
 .partners {
@@ -422,6 +532,11 @@ body {
   vertical-align: middle;
 }
 
+.partners-item-img:hover {
+         transition: 0.9s; /* Время эффекта */
+    transform: scale(1.1); /* Увеличиваем масштаб */
+   }
+
 /* FOOTER */
 
 .main-footer {
@@ -441,7 +556,7 @@ body {
   flex-wrap: wrap;
   max-width: 1150px;
   padding: 0;
-  margin: 0 0 15px 0;
+  margin: 0 0 25px 0;
   list-style: none;
 }
 
@@ -484,6 +599,27 @@ body {
 }
 
 .main-footer-social-link {
+  display: flex;
   color: #ffffff;
   text-decoration: none;
+}
+
+.main-footer-social-link::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+}
+
+.main-footer-social-item:hover,
+.main-footer-social-item:focus {
+  opacity: 0.5;
+}
+
+.main-footer-nav-link:hover,
+.main-footer-nav-link:focus {
+  text-decoration: underline;
+}
+
+.main-footer-nav-link:active {
+  opacity: 0.5;
 }
