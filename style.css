@@ -149,7 +149,7 @@ body {
   padding: 0;
   margin: 0;
   margin-left: 10px;
-  margin-bottom: 70px;
+  margin-bottom: 80px;
   list-style: none;
 }
 
@@ -207,6 +207,7 @@ body {
 }
 
 .promo-link {
+  display: flex;
   font-weight: normal;
   font-size: 20px;
   line-height: 22px;
@@ -216,6 +217,18 @@ body {
   text-transform: lowercase;
   transform-origin: 0 0;
   transform: translateX(100%) rotate(90deg);
+  margin-top: -30px;
+}
+
+.promo-link::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url("img/promo-arrow.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+   transform: translateX(100%) rotate(-90deg);
 }
 
 /* CATALOG */
