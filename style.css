@@ -378,9 +378,26 @@ body {
   margin: 0;
   line-height: 31px;
 }
+
 .sales-img {
-  padding: 10px 10px 10px 10px;
+  z-index: 1;
+}
+
+.sales-img-wrapper {
+  display: flex;
+}
+
+.sales-img-wrapper::after {
+  content: " ";
+  min-width: 697px;
+  height: 410px;
   border: 1px solid rgba(255, 255, 255, 0.2);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 20px;
+  margin-left: -677px;
+  z-index: 2;
 }
 
 /* PORTFOLIO */
@@ -409,6 +426,27 @@ body {
   display: flex;
   flex-wrap: wrap;
   width: 600px;
+}
+
+.portfolio-photo {
+  z-index: 1;
+}
+
+.portfolio-photo-wrapper {
+  display: flex;
+}
+
+.portfolio-photo-wrapper::after {
+  content: " ";
+  min-width: 996px;
+  height: 815px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 20px;
+  margin-left: -976px;
+  z-index: 2;
 }
 
 .photo-preview-item {
