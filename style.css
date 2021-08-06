@@ -481,12 +481,12 @@ body {
 
 .certificate-text {
   margin: 0;
-  padding: 70px 35px 110px 35px;
+  padding: 70px 35px 20px 35px;
   text-align: center;
 }
 
 .certificates-item-big .certificate-text {
-  padding: 95px 60px 130px 74px;
+  padding: 95px 60px 20px 74px;
 }
 
 .certificate-decoration-top {
@@ -503,6 +503,11 @@ body {
   bottom: 8px;
   width: auto;
   height: auto;
+}
+
+.certificate-body-decoration {
+  margin-top: 10px;
+  margin-bottom: 40px;
 }
 
 /*PARTNERS*/
